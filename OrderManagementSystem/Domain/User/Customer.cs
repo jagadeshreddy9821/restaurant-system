@@ -6,12 +6,12 @@
     using Common;
 
     /// <summary>
-    /// Customer
+    /// Klient
     /// </summary>
     public class Customer : Entity<Guid>
     {
         /// <summary>
-        /// Name
+        /// Imię
         /// </summary>
         public virtual string Firstname { get; set; }
 

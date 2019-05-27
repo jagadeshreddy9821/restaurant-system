@@ -16,7 +16,7 @@
         [Display(Name="Gwiazdki")]
         public int RateStars { get; set; }
 
-        [Display(Name = "Description")]
+        [Display(Name = "Opis")]
         public string RateDetails { get; set; }
     }
 }

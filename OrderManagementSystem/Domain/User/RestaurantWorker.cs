@@ -6,32 +6,32 @@
     using Common;
 
     /// <summary>
-    /// Waiter w restauracji
+    /// Kelner w restauracji
     /// </summary>
     public class RestaurantWorker : Entity<Guid>
     {
         /// <summary>
-        /// "Pseudonym"
+        /// "Pseudonim"
         /// </summary>
         public virtual string Nick { get; set; }
 
         /// <summary>
-        /// Name
+        /// Imię
         /// </summary>
         public virtual string Firstname { get; set; }
 
         /// <summary>
-        /// Name
+        /// Nazwisko
         /// </summary>
         public virtual string Lastname { get; set; }
 
         /// <summary>
-        /// Position
+        /// Stanowisko
         /// </summary>
         public virtual Position Position { get; set; }
 
         /// <summary>
-        /// Restauracja, w której zatrudniony jest Employee
+        /// Restauracja, w której zatrudniony jest pracownik
         /// </summary>
         public virtual Restaurant.Restaurant Restaurant { get; set; }
 
@@ -41,19 +41,19 @@
         public virtual AppUser AppUser { get; set; }
 
         /// <summary>
-        /// Czy Employee jest nadal pracownikiem restauracji
+        /// Czy pracownik jest nadal pracownikiem restauracji
         /// </summary>
         public virtual bool Active { get; set; }
     }
 
     /// <summary>
-    /// Position
+    /// Stanowisko
     /// </summary>
     public enum Position
     {
-        [Display(Name="Waiter")]
+        [Display(Name="Kelner")]
         Waiter = 1,
-        [Display(Name = "Cook")]
+        [Display(Name = "Kucharz")]
         Cook = 2,
         [Display(Name = "Manager")]
         Manager = 3

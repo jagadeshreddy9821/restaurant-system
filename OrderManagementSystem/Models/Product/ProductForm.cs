@@ -33,44 +33,44 @@
         /// </summary>
         public Guid? ProductDetailsId { get; set; }
 
-        [Display(Name="Name")]
+        [Display(Name="Nazwa")]
         public string ProductName { get; set; }
 
-        [Display(Name = "Link to the photo")]
+        [Display(Name = "Link do zdjęcia")]
         public string ProductPhotoUrl { get; set; }
 
-        [Display(Name = "Category")]
+        [Display(Name = "Kategoria")]
         public string ProductCategoryName { get; set; }
 
-        [Display(Name="Name menu")]
+        [Display(Name="Nazwa menu")]
         public string MenuName { get; set; }
 
-        [Display(Name = "Description")]
+        [Display(Name = "Opis")]
         public string ProductDescription { get; set; }
 
-        [RegularExpression(@"[0-9]*\,?[0-9]+", ErrorMessage = "{0} must be numeric.")]
-        [Display(Name = "Price")]
+        [RegularExpression(@"[0-9]*\,?[0-9]+", ErrorMessage = "{0} musi być numerem.")]
+        [Display(Name = "Cena")]
         public decimal Price { get; set; }
 
-        [Display(Name = "Promotion (in%)")]
+        [Display(Name = "Promocja (w %)")]
         public int? PercentDiscount { get; set; }
 
-        [Display(Name = "Quantity of calories w kcal")]
+        [Display(Name = "Ilość kalorii w kcal")]
         public int? ProductDetailsCalories { get; set; }
 
-        [Display(Name = "Quantity of protein in grams")]
+        [Display(Name = "Ilość białka w gramach")]
         public int? ProductDetailsProtein { get; set; }
 
-        [Display(Name = "Quantity of carbohydrates in grams")]
+        [Display(Name = "Ilość węglowodanów w gramach")]
         public int? ProductDetailsCarbohydrates { get; set; }
 
-        [Display(Name = "Quantity of fat in grams")]
+        [Display(Name = "Ilość tłuszczu w gramach")]
         public int? ProductDetailsFat { get; set; }
 
         /// <summary>
         /// Lista dostępnych kategorii w restauracji
         /// </summary>
-        [Display(Name="Category")]
+        [Display(Name="Kategoria")]
         public List<ProductCategoryForm> ProductCategories { get; set; }
 
         /// <summary>
@@ -107,10 +107,10 @@
         /// </summary>
         public Guid? RestaurantId { get; set; }
 
-        [Display(Name = "Name of the category")]
+        [Display(Name = "Nazwa kategorii")]
         public string ProductCategoryName { get; set; }
 
-        [Display(Name = "Category Code")]
+        [Display(Name = "Kod kategorii")]
         public string ProductCategoryCode { get; set; }
 
         /// <summary>

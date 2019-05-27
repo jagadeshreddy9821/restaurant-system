@@ -6,7 +6,7 @@
     public class RestaurantSearchForm
     {
         /// <summary>
-        /// Name lub unikalny numer restauracji
+        /// Nazwa lub unikalny numer restauracji
         /// </summary>
         public string RestaurantNameOrCode { get; set; }
     }

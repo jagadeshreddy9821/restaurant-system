@@ -21,11 +21,11 @@
         public Guid? RestaurantId { get; set; }
 
         [Required]
-        [Display(Name="Name menu")]
+        [Display(Name="Nazwa menu")]
         public string MenuName { get; set; }
 
         [Required]
-        [Display(Name = "Brief Code menu")]
+        [Display(Name = "Skrócony kod menu")]
         public string MenuCode { get; set; }
 
         [Display(Name="Aktywne")]

@@ -16,7 +16,7 @@
         /// </summary>
         string Login { get; set; }
         /// <summary>
-        /// Password 
+        /// Hasło
         /// </summary>
         string Password { get; set; }
     }
@@ -33,12 +33,12 @@
         /// <summary>
         /// Login
         /// </summary>
-        [Display(Name="User Name")]
+        [Display(Name="Nazwa użytkownika")]
         public virtual string Login { get; set; }
         /// <summary>
-        /// Password 
+        /// Hasło
         /// </summary>
-        [Display(Name="Password")]
+        [Display(Name="Hasło")]
         public virtual string Password { get; set; }
 
         /// <summary>

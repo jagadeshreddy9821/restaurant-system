@@ -1,11 +1,11 @@
 ﻿@model OrderManagementSystem.Models.Order.OrderForm
 
 @{
-    ViewBag.Title = "details of the order";
+    ViewBag.Title = "Szczegóły zamówienia";
     Layout = "~/Views/Shared/_CustomerLayout.cshtml";
 }
 
-<h2 class="margin-form">details of the order</h2>
+<h2 class="margin-form">Szczegóły zamówienia</h2>
 
 <div class="col-md-12">
     <hr/>
@@ -34,17 +34,17 @@
 </div>
 <div class="col-md-12">
     <fieldset>
-        <legend>Products on order</legend>
+        <legend>Produkty na zamówieniu</legend>
         <table id="orderItemsTable" class="table table-hover">
             <thead>
             <tr>
                 <th>Menu</th>
-                <th>Category</th>
-                <th>Product name</th>
-                <th>Description</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Sum</th>
+                <th>Kategoria</th>
+                <th>Nazwa produktu</th>
+                <th>Opis</th>
+                <th>Cena</th>
+                <th>Ilość</th>
+                <th>Suma</th>
             </tr>
             </thead>
             <tbody>
@@ -57,5 +57,5 @@
     </fieldset>
 </div>
 <p>
-    @Html.ActionLink("Return to the history of orders", "OrderHistory")
+    @Html.ActionLink("Wróc do historii zamówień", "OrderHistory")
 </p>

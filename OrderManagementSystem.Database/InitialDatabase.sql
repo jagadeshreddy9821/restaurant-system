@@ -36,35 +36,35 @@ select @rtWaiter = UserId from dbo.AppUser where [Login] = 'rt-waiter'
 declare @rsWaiter int
 select @rsWaiter = UserId from dbo.AppUser where [Login] = 'rs-waiter'
 declare @rwCook int
-select @rwCook = UserId from dbo.AppUser where [Login] = 'rw-Cook'
+select @rwCook = UserId from dbo.AppUser where [Login] = 'rw-cook'
 declare @rfCook int
-select @rfCook = UserId from dbo.AppUser where [Login] = 'rf-Cook'
+select @rfCook = UserId from dbo.AppUser where [Login] = 'rf-cook'
 declare @rtCook int
-select @rtCook = UserId from dbo.AppUser where [Login] = 'rt-Cook'
+select @rtCook = UserId from dbo.AppUser where [Login] = 'rt-cook'
 declare @rsCook int
-select @rsCook = UserId from dbo.AppUser where [Login] = 'rs-Cook'
+select @rsCook = UserId from dbo.AppUser where [Login] = 'rs-cook'
 
 -- Dodawanie pracowników restauracji
 -- Pozycje:
--- 1 Waiter
--- 2 Cook
+-- 1 Kelner
+-- 2 Kucharz
 -- 3 Manager
 insert into dbo.RestaurantWorker
 (RestaurantWorkerId, Firstname, Lastname, Nick, PositionId, RestaurantId, UserId)
 values
--- Employees 'Restauracja u Witka'
+-- Pracownicy 'Restauracja u Witka'
 (newid(), 'Robert', 'Witkowski', 'Witek', 3, @restauracjaWitka, @rwManager),
 (newid(), 'Mariusz', 'Strzelczyk', 'Strzała', 1, @restauracjaWitka, @rwWaiter),
 (newid(), 'Arkadiusz', 'Kowalski', 'Kowal', 2, @restauracjaWitka, @rwCook),
--- Employees 'Restauracja francuska'
+-- Pracownicy 'Restauracja francuska'
 (newid(), 'Justyna', 'Szymborska', 'Justyś', 3, @restauracjaFrancuska, @rfManager),
 (newid(), 'Ramona', 'Konopka', 'Ramcia', 1, @restauracjaFrancuska, @rfWaiter),
 (newid(), 'Katarzyna', 'Galik', 'Gali', 2, @restauracjaFrancuska, @rfCook),
--- Employees 'Restauracja tajska'
+-- Pracownicy 'Restauracja tajska'
 (newid(), 'Maurico', 'Peamo', 'Peamo', 3, @restauracjaTajska, @rtManager),
 (newid(), 'Marono', 'Michelle', 'Michellini', 1, @restauracjaTajska, @rtWaiter),
 (newid(), 'Lorem', 'Ipsum', 'Lorus', 2, @restauracjaTajska, @rtCook),
--- Employees 'Restauracja staropolska'
+-- Pracownicy 'Restauracja staropolska'
 (newid(), 'Jan', 'Piechota', 'Piechota', 3, @restauracjaStaropolska, @rsManager),
 (newid(), 'Piotr', 'Nowak', 'Nowak', 1, @restauracjaStaropolska, @rsWaiter),
 (newid(), 'Stanisław', 'Xiński', 'XXX', 2, @restauracjaStaropolska, @rsCook)

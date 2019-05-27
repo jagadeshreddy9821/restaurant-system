@@ -20,26 +20,26 @@ namespace OrderManagementSystem.Models.Order
 
         public Guid? ProductCategoryId { get; set; }
 
-        [Display(Name = "Name menu")]
+        [Display(Name = "Nazwa menu")]
         public string MenuName { get; set; }
 
-        [Display(Name = "Name of the category")]
+        [Display(Name = "Nazwa kategorii")]
         public string ProductCategoryName { get; set; }
 
-        [Display(Name = "Name")]
+        [Display(Name = "Nazwa")]
         public string ProductName { get; set; }
 
-        [Display(Name="Picture")]
+        [Display(Name="Zdjęcie")]
         public string ProductPhotoUrl { get; set; }
 
-        [Display(Name="Description")]
+        [Display(Name="Opis")]
         public string ProductDescription { get; set; }
 
-        [Display(Name = "Price")]
+        [Display(Name = "Cena")]
         [DataType(DataType.Currency)]
         public decimal ProductPrice { get; set; }
 
-        [Display(Name = "Quantity")]
+        [Display(Name = "Ilość")]
         public int Quantity { get; set; }
     }
 }
