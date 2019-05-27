@@ -4,22 +4,22 @@
     using Common;
 
     /// <summary>
-    /// Category produktu
+    /// Kategoria produktu
     /// </summary>
     public class ProductCategory : Entity<Guid>
     {
         /// <summary>
-        /// Category Code
+        /// Kod kategorii
         /// </summary>
         public virtual string Code { get; set; }
 
         /// <summary>
-        /// Name of the category
+        /// Nazwa kategorii
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// Restauracja, do której należy dana Category produktu
+        /// Restauracja, do której należy dana kategoria produktu
         /// </summary>
         public virtual Restaurant.Restaurant Restaurant { get; set; }
     }

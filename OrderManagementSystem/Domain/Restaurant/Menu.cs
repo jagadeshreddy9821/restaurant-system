@@ -11,12 +11,12 @@
     public class Menu : Entity<Guid>
     {
         /// <summary>
-        /// Code Menu
+        /// Kod Menu
         /// </summary>
         public virtual string Code { get; set; }
 
         /// <summary>
-        /// Name menu
+        /// Nazwa menu
         /// </summary>
         public virtual string Name { get; set; }
 

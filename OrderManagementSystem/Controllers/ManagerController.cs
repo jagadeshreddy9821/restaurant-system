@@ -348,7 +348,7 @@
         }
 
         /// <summary>
-        /// The History of Orders in the restaurant
+        /// Historia zamówień w restauracji
         /// </summary>
         /// <returns></returns>
         [HttpGet]

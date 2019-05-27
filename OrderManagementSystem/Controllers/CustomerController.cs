@@ -53,7 +53,7 @@
         }
 
         /// <summary>
-        /// Search for restaurants
+        /// Wyszukiwanie restauracji
         /// </summary>
         /// <param name="vm">Model do wyszukiwania</param>
         /// <returns></returns>
@@ -193,7 +193,7 @@
         /// <summary>
         /// Zatwierdzenie zamówienia
         /// </summary>
-        /// <param name="orderForm">Current order</param>
+        /// <param name="orderForm">Aktualne zamówienie</param>
         /// <returns></returns>
         [HttpPost]
         public ActionResult PlaceOrder(OrderForm orderForm)
@@ -208,7 +208,7 @@
         }
 
         /// <summary>
-        /// Details aktualnego zamówienia
+        /// Szczegóły aktualnego zamówienia
         /// </summary>
         /// <param name="orderId">Id zamówienia</param>
         /// <returns></returns>
@@ -222,7 +222,7 @@
         }
 
         /// <summary>
-        /// The History of Orders klienta
+        /// Historia zamówień klienta
         /// </summary>
         /// <returns></returns>
         [HttpGet]
@@ -247,7 +247,7 @@
         }
 
         /// <summary>
-        /// Customer wyraża chęć zapłaty za zamówienie
+        /// Klient wyraża chęć zapłaty za zamówienie
         /// </summary>
         /// <param name="orderId">Id zamówienia</param>
         /// <returns></returns>
@@ -259,7 +259,7 @@
             if(cmdResult.Success)
                 return RedirectToAction("RateOrder", new {orderId = orderId});
             else
-                return new HttpStatusCodeResult(400, "Nie wszystkie Line items zostały dostarczone do stolika, poczekaj chwilkę! :)");
+                return new HttpStatusCodeResult(400, "Nie wszystkie elementy zamówienia zostały dostarczone do stolika, poczekaj chwilkę! :)");
         }
 
         /// <summary>

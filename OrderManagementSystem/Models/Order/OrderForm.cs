@@ -31,39 +31,39 @@
         [Display(Name = "Data zakończenia")]
         public DateTime? OrderFinishedDate { get; set; }
 
-        [Display(Name = "Rating")]
+        [Display(Name = "Ocena")]
         public int? OrderRate { get; set; }
 
-        [Display(Name = "Rating klienta")]
+        [Display(Name = "Ocena klienta")]
         public string OrderRateDetails { get; set; }
 
         [StringLength(200)]
         [DataType(DataType.MultilineText)]
-        [Display(Name = "Comments to order")]
+        [Display(Name = "Uwagi do zamówienia")]
         public string OrderComments { get; set; }
 
-        [Display(Name = "Aktualny Status of the order")]
+        [Display(Name = "Aktualny status zamówienia")]
         public OrderStatus OrderStatus { get; set; }
 
         public Guid CustomerId { get; set; }
 
-        [Display(Name = "Customer")]
+        [Display(Name = "Klient")]
         public string CustomerFullName { get; set; }
 
         public Guid? WaiterId { get; set; }
 
-        [Display(Name = "Waiter")]
+        [Display(Name = "Kelner")]
         public string WaiterFirstName { get; set; }
 
         public Guid? CookId { get; set; }
 
-        [Display(Name = "Cook")]
+        [Display(Name = "Kucharz")]
         public string CookFirstName { get; set; }
 
-        [Display(Name="Table number")]
+        [Display(Name="Numer stolika")]
         public int? TableNumber { get; set; }
 
-        [Display(Name = "Sum")]
+        [Display(Name = "Suma")]
         public decimal TotalPrice
         {
             get { return OrderItems.Any() ? OrderItems.Select(x => x.ProductPrice * x.Quantity).Sum() : 0; }

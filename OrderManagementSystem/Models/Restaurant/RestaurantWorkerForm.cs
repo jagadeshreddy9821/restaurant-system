@@ -17,18 +17,18 @@
         [Display(Name="Aktywny")]
         public bool Active { get; set; }
 
-        [Display(Name = "Position")]
+        [Display(Name = "Stanowisko")]
         public Position Position { get; set; }
 
-        [Display(Name="Pseudonym")]
+        [Display(Name="Pseudonim")]
         public string Nick { get; set; }
 
         [Required]
-        [Display(Name = "Name of the employee")]
+        [Display(Name = "Imię pracownika")]
         public string Firstname { get; set; }
 
         [Required]
-        [Display(Name = "Name of the employee")]
+        [Display(Name = "Nazwisko pracownika")]
         public string Lastname { get; set; }
 
         public int AppUserId { get; set; }
@@ -36,7 +36,7 @@
         [Display(Name="Login")]
         public string Login { get; set; }
 
-        [Display(Name="Password ")]
+        [Display(Name="Hasło")]
         public string Password { get; set; }
 
         /// <summary>
@@ -44,7 +44,7 @@
         /// </summary>
         public Guid? RestaurantId { get; set; }
 
-        [Display(Name = "Name restauracji")]
+        [Display(Name = "Nazwa restauracji")]
         public string RestaurantName { get; set; }
 
         public RestaurantWorkerForm() { }

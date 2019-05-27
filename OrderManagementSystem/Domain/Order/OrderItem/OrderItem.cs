@@ -21,7 +21,7 @@
         public virtual Order Order { get; set; }
 
         /// <summary>
-        /// Quantity produktu
+        /// Ilość produktu
         /// </summary>
         public virtual int Quantity { get; set; }
 

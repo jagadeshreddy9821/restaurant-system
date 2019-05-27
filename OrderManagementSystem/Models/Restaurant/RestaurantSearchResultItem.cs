@@ -13,17 +13,17 @@
         public Guid RestaurantId { get; set; }
 
         /// <summary>
-        /// Link to the photo
+        /// Link do zdjęcia
         /// </summary>
         public string RestaurantPhotoUrl { get; set; }
 
         /// <summary>
-        /// Name restauracji
+        /// Nazwa restauracji
         /// </summary>
         public string RestaurantName { get; set; }
 
         /// <summary>
-        /// Code restauracji
+        /// Kod restauracji
         /// </summary>
         public string RestaurantCode { get; set; }
 

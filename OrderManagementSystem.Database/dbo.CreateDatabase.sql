@@ -16,10 +16,10 @@ VALUES
 ('rf-waiter'),
 ('rt-waiter'),
 ('rs-waiter'),
-('rw-Cook'),
-('rf-Cook'),
-('rt-Cook'),
-('rs-Cook'),
+('rw-cook'),
+('rf-cook'),
+('rt-cook'),
+('rs-cook'),
 ('customer')
 
 CREATE TABLE dbo.Restaurant
@@ -131,8 +131,8 @@ CREATE TABLE dbo.Position
 INSERT INTO dbo.Position
 (PositionId, Name, Code)
 VALUES
-(1, 'Waiter', 'KE'),
-(2, 'Cook', 'KU'),
+(1, 'Kelner', 'KE'),
+(2, 'Kucharz', 'KU'),
 (3, 'Manager', 'MA')
 
 CREATE TABLE dbo.RestaurantWorker

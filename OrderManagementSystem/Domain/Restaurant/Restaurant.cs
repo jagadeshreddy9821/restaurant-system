@@ -12,12 +12,12 @@
     public class Restaurant : Entity<Guid>
     {
         /// <summary>
-        /// Name restauracji
+        /// Nazwa restauracji
         /// </summary>
         public virtual string Name { get; set; }
 
         /// <summary>
-        /// A unique restaurant code
+        /// Unikalny kod restauracji
         /// </summary>
         public virtual string UniqueCode { get; set; }
 
@@ -27,17 +27,17 @@
         public virtual RestaurantAddress Address { get; set; }
 
         /// <summary>
-        /// Restaurent Manager
+        /// Manager restauracji
         /// </summary>
         public virtual RestaurantWorker Manager { get; set; }
 
         /// <summary>
-        /// Link to the photo restauracji
+        /// Link do zdjęcia restauracji
         /// </summary>
         public virtual string PhotoUrl { get; set; }
 
         /// <summary>
-        /// Employees restauracji
+        /// Pracownicy restauracji
         /// </summary>
         public virtual ICollection<RestaurantWorker> RestaurantWorkers { get; set; }
 
@@ -58,27 +58,27 @@
     public class RestaurantAddress
     {
         /// <summary>
-        /// Street
+        /// Ulica
         /// </summary>
         public virtual string Street { get; set; }
 
         /// <summary>
-        /// City
+        /// Miasto
         /// </summary>
         public virtual string City { get; set; }
 
         /// <summary>
-        /// ZIP code
+        /// Kod pocztowy
         /// </summary>
         public virtual string PostalCode { get; set; }
 
         /// <summary>
-        /// Number of the building
+        /// Numer budynku
         /// </summary>
         public virtual int StreetNumber { get; set; }
 
         /// <summary>
-        /// House number
+        /// Numer lokalu
         /// </summary>
         public virtual int? FlatNumber { get; set; }
     }

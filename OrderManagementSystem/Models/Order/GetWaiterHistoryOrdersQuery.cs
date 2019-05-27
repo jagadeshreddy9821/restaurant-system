@@ -6,7 +6,7 @@
     using Infrastructure.Query;
 
     /// <summary>
-    /// Pobranie zamówień, które obsłużył Waiter
+    /// Pobranie zamówień, które obsłużył kelner
     /// </summary>
     public class GetWaiterHistoryOrdersQuery : Query<List<OrderForm>>
     {
